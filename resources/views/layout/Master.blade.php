@@ -112,11 +112,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <img src="{{asset('AdminLTE/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Anis</a>
+                        <a href="#" class="d-block">FAZA</a>
                     </div>
                 </div>
-
-
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
@@ -138,7 +136,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="home" class="nav-link">
+                            <a href="reports" class="nav-link">
                                 <i class="fas fa-book nav-icon"></i>
                                 <p>
                                     Reports
@@ -146,7 +144,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="home" class="nav-link">
+                            <a href="customer" class="nav-link">
                                 <i class="fas fa-handshake nav-icon"></i>
                                 <p>
                                     Customer
@@ -154,18 +152,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="home" class="nav-link">
+                            <a href="absent" class="nav-link">
                                 <i class="fas fa-address-book nav-icon"></i>
                                 <p>
                                     Absent
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="home" class="nav-link">
-                                <i class="fas fa-user-cog nav-icon"></i>
-                                <p>
-                                    Settings
                                 </p>
                             </a>
                         </li>
@@ -208,6 +198,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src=" {{ asset('AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <!-- AdminLTE App -->
     <script src="{{ asset('AdminLTE/dist/js/adminlte.min.js')}}"></script>
+    <script>
+        var navAll = document.querySelectorAll(".nav-sidebar a");
+        navAll.forEach(function(nav) {
+            // console.log(nav);
+            nav.className = 'nav-link'
+            if (nav.href == location.href) {
+                nav.classList.add('active');
+            }
+        });
+    </script>
 </body>
 
 </html>
