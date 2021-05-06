@@ -71,7 +71,7 @@
                         <div class="card-body">
                             <strong>Unit Detail</strong>
                             <p class="text-muted my-2"><i class="fas fa-user-alt mr-1 text-center" style="width: 40px;"></i>Faza Ainun Nafisah</p>
-                            <p class="text-muted my-2"><i class="fas fa-mobile-alt mr-1 text-center" style="width: 40px;"></i>08111225562</p>
+                            <p class="text-muted my-2"><i class="fas fa-mobile-alt mr-1 text-center" style="width: 40px;"></i>+62 8111225562</p>
                             <p class="text-muted my-2"><i class="fas fa-envelope mr-1 text-center" style="width: 40px;"></i>fazanafisah@yahoo.com</p>
                             <p class="text-muted my-2"><i class="fas fa-birthday-cake mr-1 text-center" style="width: 40px;"></i>27 Oktober 1998</p>
                             <hr>
