@@ -13,6 +13,7 @@ use App\Http\Controllers\AbsentController;
 // });
 
 // Route::get('/Home', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
 Route::get('/home', [HomeController::class, 'index']);
 Route::get('/profile', [ProfileController::class, 'index']);
 //reports

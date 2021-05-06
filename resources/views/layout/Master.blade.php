@@ -8,20 +8,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MTF-APP | TEAM HELEN</title>
+    <title>STS Mandiri-App</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="{{ asset('AdminLTE/plugins/fontawesome-free/css/all.min.css')}}">
     <!-- sweetalert -->
-    <link rel="stylesheet" href="{{asset('../../AdminLTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css')}}">
+    <link rel="stylesheet" href="{{asset('AdminLTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('AdminLTE/dist/css/adminlte.min.css')}}">
     <!-- daterange picker -->
-    <link rel="stylesheet" href="{{asset('../../AdminLTE/plugins/daterangepicker/daterangepicker.css')}}">
+    <link rel="stylesheet" href="{{asset('AdminLTE/plugins/daterangepicker/daterangepicker.css')}}">
     <!-- Tempusdominus Bootstrap 4 -->
-    <link rel="stylesheet" href="{{asset('../../AdminLTE/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
+    <link rel="stylesheet" href="{{asset('AdminLTE/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
     <style>
         .nav-pills .nav-link.active,
         .nav-pills .show>.nav-link {
@@ -116,9 +116,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-danger elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
-                <img src="{{ asset('../../AdminLTE/dist/img/avatar.png')}}" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">MTF - APP</span>
+            <a href="home" class="brand-link">
+                <img src="{{ asset('AdminLTE/dist/img/avatar.png')}}" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">STS Mandiri-App</span>
             </a>
 
             <!-- Sidebar -->
@@ -126,7 +126,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{{ asset('../../AdminLTE/dist/img/user4-128x128.jpg')}}" class="img-circle elevation-2" alt="User Image">
+                        <img src="{{ asset('AdminLTE/dist/img/user4-128x128.jpg')}}" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
                         <a href="#" class="d-block">FAZA A.N</a>
@@ -137,7 +137,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <li class="nav-item">
-                            <a href="home" class="nav-link active">
+                            <a href="home" class="nav-link home active">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Home
@@ -182,50 +182,70 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div>
             <!-- /.sidebar -->
         </aside>
-
-        @yield('content')
-
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-            <div class="p-3">
-                <h5>Title</h5>
-                <p>Sidebar content</p>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header ">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">STS (Sales Tracking System)</h1>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
             </div>
-        </aside>
-        <!-- /.control-sidebar -->
+            <!-- /.content-header -->
 
-        <!-- Main Footer -->
-        <footer class="main-footer">
-            <!-- To the right -->
-            <div class="float-right d-none d-sm-inline">
-                Sales MTF
-            </div>
-            <!-- Default to the left -->
-            <strong>Copyright &copy; 2021 <a href="">TEAM HELEN</a>.</strong> All rights reserved.
-        </footer>
-    </div>
-    <!-- ./wrapper -->
+            @yield('content')
 
-    <!-- REQUIRED SCRIPTS -->
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Control sidebar content goes here -->
+                <div class="p-3">
+                    <h5>Title</h5>
+                    <p>Sidebar content</p>
+                </div>
+            </aside>
+            <!-- /.control-sidebar -->
 
-    <!-- jQuery -->
-    <script src="{{ asset('AdminLTE/plugins/jquery/jquery.min.js')}}"></script>
-    <!-- Bootstrap 4 -->
-    <script src=" {{ asset('AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <!-- AdminLTE App -->
-    <script src="{{ asset('AdminLTE/dist/js/adminlte.min.js')}}"></script>
-    @yield('js')
-    <script>
-        var navAll = document.querySelectorAll(".nav-sidebar a");
-        navAll.forEach(function(nav) {
-            // console.log(nav);
-            nav.className = 'nav-link'
-            if (nav.href == location.href) {
-                nav.classList.add('active');
-            }
-        });
-    </script>
+            <!-- Main Footer -->
+            <footer class="main-footer">
+                <!-- To the right -->
+                <div class="float-right d-none d-sm-inline">
+                    STS (Sales Tracking System) | <strong>Mandiri-App</strong>
+                </div>
+                <!-- Default to the left -->
+                <strong>Copyright &copy; 2021 <a href="">TEAM HELEN</a>.</strong> All rights reserved.
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- REQUIRED SCRIPTS -->
+
+        <!-- jQuery -->
+        <script src="{{ asset('AdminLTE/plugins/jquery/jquery.min.js')}}"></script>
+        <!-- Bootstrap 4 -->
+        <script src=" {{ asset('AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+        <!-- AdminLTE App -->
+        <script src="{{ asset('AdminLTE/dist/js/adminlte.min.js')}}"></script>
+        @yield('js')
+        <script>
+            var navAll = document.querySelectorAll(".nav-sidebar a");
+            var home = document.querySelector(".home");
+            var link = "{{asset('')}}";
+            navAll.forEach(function(nav) {
+                // console.log(nav);
+                nav.className = 'nav-link'
+                if (nav.href == location.href) {
+                    nav.classList.add('active');
+
+                }
+
+                if (link == location.href) {
+                    home.classList.add('active');
+                }
+            });
+        </script>
 </body>
 
 </html>
